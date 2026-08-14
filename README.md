@@ -1,6 +1,6 @@
 # Open Community for AI Safety China
 
-Open Community for AI Safety China is the largest AI safety open community in Chinese internet. We focus on AI risks, AI safety technologies and AI safety governance, aiming to promote the safe and sustainable development of AI. Check our [homepage](https://aisafetystudy.gixia.org/) to join the community.
+Open Community for AI Safety China is the largest AI safety open community in Chinese internet. We focus on AI risks, AI safety technologies and AI safety governance, aiming to promote the safe and sustainable development of AI. Check our [homepage](https://aisafety-cn.com/) to join the community.
 
 ### Build & Deploy
 
@@ -23,9 +23,9 @@ Currently it's a small project and directly running on Azure machine.
 Run following to build and start the web app:
 ```
 npm run build
-pm2 start npm --name "aisafetystudy" -- run start
+pm2 start npm --name "website" -- run start
 # Or restart if already running
-# pm2 restart aisafetystudy
+# pm2 restart website
 ```
 
 #### Option 2: Multi-app deployment with nginx
@@ -33,16 +33,16 @@ For multiple apps with different subdomains:
 ```bash
 # Build and start this app on port 3000
 npm run build
-PORT=3000 pm2 start npm --name "aisafetystudy" -- run start
+PORT=3000 pm2 start npm --name "website" -- run start
 ```
 
 #### Nginx Configuration
 Create `/etc/nginx/sites-available/react-apps`:
 ```nginx
-# Open Community for AI Safety China - aisafetystudy.gixia.org
+# Open Community for AI Safety China - aisafety-cn.com
 server {
     listen 80;
-    server_name aisafetystudy.gixia.org;
+    server_name aisafety-cn.com;
     
     location / {
         proxy_pass http://localhost:3000;
@@ -70,7 +70,7 @@ sudo systemctl reload nginx
 
 Use Certbot to automatically configure the website.
 ```bash
-sudo certbot --nginx -d aisafetystudy.gixia.org
+sudo certbot --nginx -d aisafety-cn.com
 ```
 
 Don't forget to enable HTTPS port in the network settings of the server.
