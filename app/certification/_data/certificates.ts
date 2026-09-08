@@ -23,10 +23,10 @@ const ISSUED_AT = '2026-09-07'
 
 /** 说明段开头（两个方向共用），后接各方向的 descZh / descEn */
 export const INTRO_ZH =
-  '本课程由AI安全开放社区（OCASC）自主开发。学员于2026年7月6日至8月23日完成为期六周、约30小时的研读与苏格拉底式小组研讨。'
+  '本课程由AI安全开放社区（OCASC）制作。学员于2026年7月6日至8月23日完成为期六周、约30小时的研读与苏格拉底式小组研讨。'
 
 export const INTRO_EN =
-  'This course is independently developed by the Open Community for AI Safety China (OCASC). From July 6 to August 23, 2026, the earner completed six weeks of study and Socratic group discussions totaling approximately 30 hours.'
+  'This course is developed by the Open Community for AI Safety China (OCASC). From July 6 to August 23, 2026, the earner completed six weeks of study and Socratic group discussions totaling approximately 30 hours.'
 
 export const TRACK_INFO: Record<
   Track,
