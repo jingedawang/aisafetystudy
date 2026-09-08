@@ -19,6 +19,7 @@
     "framer-motion": "^12.9.2",
     "lucide-react": "^0.503.0",
     "next": "^16.1.2",
+    "qrcode.react": "^4.2.0",
     "react": "latest",
     "react-dom": "latest",
     "tailwind-merge": "^3.2.0"

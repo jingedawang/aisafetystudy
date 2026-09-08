@@ -1,0 +1,34 @@
+/* 证书路由专用样式：仅 /certification 页面加载，不影响主站其它页面 */
+
+.font-serif-sc {
+  font-family: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+}
+.font-serif-en {
+  font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+}
+/* 自动增大中西文间距（渐进增强：不支持的浏览器忽略） */
+.text-autospace {
+  text-autospace: normal;
+}
+
+/* 打印 / 导出 PDF：页面尺寸 = 证书尺寸，恰好只放证书，无任何背景 */
+@media print {
+  @page {
+    size: 794px 1123px;
+    margin: 0;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  /* 强制打印背景色，避免浏览器「背景图形」开关影响效果 */
+  body,
+  body * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  main {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+}
