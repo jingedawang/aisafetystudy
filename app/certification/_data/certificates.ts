@@ -23,10 +23,10 @@ const ISSUED_AT = '2026-09-07'
 
 /** 说明段开头（两个方向共用），后接各方向的 descZh / descEn */
 export const INTRO_ZH =
-  '本课程由AI安全开放社区（OCASC）制作，内容借鉴了BlueDot Impact的国际版课程。学员于2026年7月6日至8月23日完成为期六周、约30小时的研读与苏格拉底式小组研讨。'
+  '本课程由AI安全开放社区（OCASC）自主开发。学员于2026年7月6日至8月23日完成为期六周、约30小时的研读与苏格拉底式小组研讨。'
 
 export const INTRO_EN =
-  "This course is developed by the Open Community for AI Safety China (OCASC), drawing on BlueDot Impact's international curriculum. From July 6 to August 23, 2026, the earner completed six weeks of study and Socratic group discussions totaling approximately 30 hours."
+  'This course is independently developed by the Open Community for AI Safety China (OCASC). From July 6 to August 23, 2026, the earner completed six weeks of study and Socratic group discussions totaling approximately 30 hours.'
 
 export const TRACK_INFO: Record<
   Track,
@@ -44,9 +44,9 @@ export const TRACK_INFO: Record<
     zh: '前沿AI治理方向',
     en: 'Frontier AI Governance Track',
     descZh:
-      '学员系统研习了前沿AI治理中的权力结构、政策窗口与依赖关系，评估了不同治理提案的愿景与冲突，探讨了极限条件下的AI竞赛与治理、开放权重与国际治理等争议性问题，并明确了个人在该领域的切入点，与治理导师和国际AI安全社区建立联系。',
+      '学员系统研习了前沿AI的发展与安全现状、治理基础与相关政策，评估了不同方案的目标与路径，探讨了AI超速发展、开闭源权重与国际治理等挑战，并明确了个人在该领域的工作切入点，与导师和国内外AI安全社区建立联系。',
     descEn:
-      'The earner has systematically studied power structures, policy windows and interdependencies in frontier AI governance, evaluated competing governance proposals, debated open-weights, development-speed and international-governance questions, and identified a personal entry point in the field, building networks with governance mentors and the global AI safety community.',
+      'The earner has systematically studied the development and safety landscape of frontier AI, the foundations of governance and related policies, evaluated the goals and pathways of different approaches, and explored challenges including rapid AI development, open versus closed model weights, and international governance. The earner has identified a personal entry point for work in the field, building connections with mentors and AI safety communities in China and around the world.',
   },
 }
 
